@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World!-farihin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 05px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar"> 
+<a class="active" href="/index/index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+<a href="/Page 2/about me.html"><i class="fa fa-fw fa-user"></i> About</a> 
+<a href="/Page 3/gallery.html"><i class="fa fa-fw fa-camera"></i>Gallery</a> 
+<a href="/Contact/contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a> 
+<a href="/music/music.html"><i class="fa fa-fw fa-music"></i>Music</a>
+ </div>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+
+<link rel="stylesheet" href="music.css">
+<body>
+    <div class="music-player">
+        <img src="BTS.jpg" alt="Album Cover">
+        <div class="music-info">
+            <div class="title">Young Forever-Epilogue</div>
+            <div class="artist">BTS</div>
+        </div>
+        <div class="progress-container">
+
+<audio controls>
+  <source src="/music/playlist/BTS.mp3" type="audio/ogg">
+  <source src="/music/playlist/BTS.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+      
+</body>
+</html>
